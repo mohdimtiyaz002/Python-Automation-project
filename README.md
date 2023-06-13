@@ -30,8 +30,6 @@ STEP 4: on your #Vscode download #boto3 and #AWS_CLI then configure it by enteri
 
 STEP 5: to check the total number of buckets in our AWS , the following code will give you all the names of buckets present in your  #AWS_account 
 
-{
-
 s3 = boto3.resource("s3")
 
 # Print out bucket names
@@ -40,11 +38,7 @@ for bucket in s3.buckets.all():
 
     print(bucket.name)
 
-}
-
 STEP 6: to count the number of buckets in your AWS account
-
-{
 
 C = 0
 
@@ -56,30 +50,18 @@ C = c+1
 
 Print (c)
 
-}
-
 STEP 7 : Using #Python_Boto3 to download files from the S3 bucket to your pc
 
 s3.download_file(
-
-    Bucket="     ", 
-
-Key="   ",
-
- Filename="   "
-
+    Bucket="     "
+    Key="   "
+    Filename="   "
 )
 
 STEP 8 : now to upload the files using #python from your pc to #S3_bucket
 
-
-
 s3.upload_file(
-
-    Filename="   ",
-
-    Bucket=".    ",
-
-    Key=".   ",
-
+  Filename="   ",
+    Bucket="  ",
+    Key="  ",
 )
